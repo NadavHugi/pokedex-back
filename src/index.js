@@ -5,7 +5,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const pokemons = require("./data/pokemon.json");
+const pokemons = require("../data/pokemon.json");
 
 app.get("/api/pokemons", (req, res) => {
   res.json(pokemons);
